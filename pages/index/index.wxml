@@ -1,0 +1,51 @@
+<view >
+    <!-- 公共头部 -->
+    <header></header>
+
+    <!-- 导航区域 -->
+    <view class="navbox">
+        <scroll-view scroll-x="true" class="nav">
+            <view  wx:for="{{navList}}" wx:key="index" class="navitem {{index===currentActive?'nav_active':''}}" bindtap="active" data-index="{{index}}">
+                {{item.text}}
+            </view>
+            <!-- 激活显示nav_active样式 -->
+        </scroll-view>
+    </view>
+
+    <!-- 轮播图区域 -->
+    <view class="slidebox">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="true" indicator-dots="true" interval="3000" circular="true">
+                <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+                    <navigator>
+                        <image src="{{item.imgSrc}}" class="slide-image" />
+                    </navigator>
+                </swiper-item>
+        </swiper>
+    </view>
+
+    <!-- 视频列表区域 -->
+    <view class="videobox">
+        <navigator url="../detail/detail?id={{item.id}}" class="video_item" wx:for="{{videoList}}" wx:key="index">
+            <!--图片-->
+            <view class="video_img">
+                 <image src="{{item.imgSrc}}" mode="widthFix"/>  
+                 <view class="video_info">
+                    <!--播放量-->
+                    <view class="playcount_wrap">
+                        <text class="iconfont icon-boshiweb_bofangliang"></text>
+                        <text class="playcount">{{item.playCount}}</text>
+                    </view>  
+                    <!--评论量-->
+                    <view class="commentcount_wrap">
+                        <text class="iconfont icon-pinglunliang_icon"></text>
+                        <text class="commentcount">{{item.commentCount}}</text>
+                    </view>
+                 </view>              
+            </view>
+            <!--标题-->
+            <view class="video_title">
+                <text>{{item.desc}}</text>                
+            </view>
+        </navigator>
+    </view>
+</view>

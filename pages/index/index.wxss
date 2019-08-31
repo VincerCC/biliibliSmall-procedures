@@ -1,0 +1,75 @@
+page{
+    color: #666;
+    padding: 50rpx 10rpx;
+}
+.nav{
+    white-space: nowrap;
+}
+.navitem{
+    padding: 20rpx 45rpx;
+    font-size: 30rpx;
+    display: inline-block;
+}
+.nav_active{
+    border-bottom: 5rpx solid #de688b
+}
+.slidebox{
+    margin-top: 10rpx;
+}
+.slidebox swiper{
+    /* height: 220rpx; */
+}
+.slidebox swiper navigator{
+    width: 100%;
+    height: 100%;
+}
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+/* 视频列表 */
+.videobox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rpx;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+.video_item{
+    width: 48%;
+    margin-bottom: 20rpx;
+
+}
+.video_img{
+    position: relative;
+}
+.video_img image{
+    width: 100%;
+    border-radius: 15rpx;
+}
+.video_info{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0 10rpx;
+    bottom:10rpx;
+    color: #fff;
+    font-size: 24rpx;
+}
+.playcount{
+    margin-left: 10rpx;
+}
+.commentcount{
+    margin-left: 10rpx;
+}
+.video_title{
+    font-size: 24rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+}

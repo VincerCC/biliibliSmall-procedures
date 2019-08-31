@@ -1,0 +1,49 @@
+/* Header/header.wxss */
+/* 四个都需要在一行显示 */
+@import "../../fonticon/iconfont.wxss";
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+    background-color: #fff;
+}
+.logo{
+    flex: 7;
+    padding-left: 10rpx;
+}
+.logoimage{
+    width: 140rpx;
+    height: 60rpx;
+}
+.search{
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding-right: 20rpx;
+}
+.searchimage{
+    width: 60rpx;
+    height: 60rpx;
+}
+.user{
+    flex: 2;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
+.userimage{
+    width: 54rpx;
+    height: 60rpx;
+}
+.download{
+    flex: 3;
+    font-size: 30rpx;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: pink;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}
