@@ -16,9 +16,7 @@ page{
 .slidebox{
     margin-top: 10rpx;
 }
-.slidebox swiper{
-    /* height: 220rpx; */
-}
+
 .slidebox swiper navigator{
     width: 100%;
     height: 100%;
@@ -65,11 +63,11 @@ page{
 }
 .video_title{
     font-size: 24rpx;
+    word-wrap: break-word; /* 允许长单词自动换行到下一行 */
+    /* 下边代码为 文本显示为两行,超过部分隐藏并使用省略号*/
+    -webkit-line-clamp: 2;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    word-wrap: break-word;
-    -webkit-line-clamp: 2;
-    white-space: normal;
     -webkit-box-orient: vertical;
 }

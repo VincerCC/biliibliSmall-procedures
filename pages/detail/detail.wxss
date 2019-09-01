@@ -50,7 +50,7 @@ page{
 .orther_detail{
     margin-top: 15rpx;
     font-size: 26rpx;
-    columns: #666;
+    color: #666;
 }
 .playcount{
     margin-right: 15rpx;
