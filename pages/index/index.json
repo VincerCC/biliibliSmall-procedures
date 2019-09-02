@@ -2,5 +2,5 @@
   "usingComponents": {
     "header":"../../components/header/header"
   },
-  "navigationBarTitleText": "bilibili"
+  "navigationBarTitleText": "刘颖聪的仿bilibili项目"
 }
